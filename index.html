@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,11 +15,20 @@
         <h1>To-Do List</h1>
 
         <div class="input_box">
-            <input type="text" placeholder="Enter Items Here...">
+            <input type="text" id="ItemList" placeholder="Enter Items Here..." maxlength="26">
 
-            <button>Add</button>
+            <button class="btn" id="enter" onclick="ItemAdd()"><i class="fas fa-pen fa-lg"></i></button>
         </div>
+
+        <ul id="items">
+            
+        </ul>
+
+        <h3>Completed</h3>
+      <ul id="completed-tasks">
     </div>
 </body>
+
+<script src="app.js"></script>
 
 </html>
