@@ -117,3 +117,26 @@ input[type=checkbox] {
 #completed-tasks{
     text-decoration: line-through;
 }
+
+@media(max-width:500px){
+    input[type=text] {
+        font-size: 1.3em;
+    }
+    .input_box {
+        margin: 1em 0.1em;
+       }
+
+       li {
+        position: relative;
+        padding: 1.2em 0 1.2em 3em;
+       }
+
+       ul {
+        margin: 0.5em 0.2em;
+    }
+
+    input[type=checkbox] {
+        position: absolute;
+        right: 290px;
+    }
+}
